@@ -15,7 +15,7 @@ $form = ActiveForm::begin([
 ?>
 
 <?= $form->field($model, 'files[]', [
-    'inputOptions' => ['multiple' => true],
+    'inputOptions' => ['multiple' => true, 'accept' => 'image/*'],
 ])->fileInput()->label('Выберите изображения'); ?>
 
 <div class="form-group">
